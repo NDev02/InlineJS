@@ -1,5 +1,7 @@
 window.addEventListener('load', () => { checkElement(document.querySelector('body')) });
 
+let inlineIdentifier = ';'
+
 function checkElement(root) {
     for(let elm of root.childNodes) {
         if(elm.nodeType == 3 && elm.parentNode.nodeName != "SCRIPT") {
@@ -8,7 +10,6 @@ function checkElement(root) {
             let updated = false;
             let inBlock = false;
             for(let char of elm.data.replace(/\n/g, "")) {
-                console.log(char);
                 if(inBlock) {
                     if(char != " ") {
                         currentBlock += char;
@@ -18,7 +19,7 @@ function checkElement(root) {
                         inBlock = false;
                         updated = true;
                     }
-                } else if(char == ";") {
+                } else if(char == inlineIdentifier) {
                     inBlock = true;
                 } else {
                     data += char;
