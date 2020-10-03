@@ -42,11 +42,11 @@ And in an HTML file we have the following inside a body element:
 The result would be an h3 element that says "Goodmorning!". Again note that we cannot use spacing in our output strings without storing them in a different variable in our JavaScript.
 
 # Summation
-- Is this extremely useful?
-  - Probably not.
-- Does it run Doom?
-  - I mean... go for it, probably with some work.
-- Do I plan on updating it to do more things?
-  - Probably not, but maybe.
-- So what is this for?
-  - I was working on another project and needed some functionality to quickly insert some values from JavaScript but I didn't need a whole framework so I just wrote this simple function. It works great for simple tasks where you just need some quick dynamic HTML. In theory any valid JavaScript written following a ';' without any kind of spacing would run, it's just using the eval function when it comes down to it. Maybe I'll add some features if I need it to do more for the project I'm working on but it's just kind of a nice simple thing right now. Feel free to try it out, or not that's cool to. It's mainly uploaded here so I can use it in future projects.
+### Is this extremely useful?
+Probably not.
+### Does it run Doom?
+I mean... go for it, probably with some work.
+### Do I plan on updating it to do more things?
+Probably not, but maybe.
+### So what is this for?
+I was working on another project and needed some functionality to quickly insert some values from JavaScript but I didn't need a whole framework so I just wrote this simple function. It works great for simple tasks where you just need some quick dynamic HTML. In theory any valid JavaScript written following a ';' without any kind of spacing would run, it's just using the eval function when it comes down to it. Maybe I'll add some features if I need it to do more for the project I'm working on but it's just kind of a nice simple thing right now. Feel free to try it out, or not that's cool to. It's mainly uploaded here so I can use it in future projects.
